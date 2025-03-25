@@ -1,119 +1,101 @@
-# 🚀 Reinforcement Learning Experiment  
+# 🧠 Natural Language Understanding (NLU) - Named Entity Recognition (NER)
 
-## 📖 Overview  
-This project explores **Reinforcement Learning (RL)** techniques for solving complex decision-making problems using **Deep Q-Learning (DQN)** and other RL algorithms. The goal is to simulate agent behavior in an interactive environment, optimizing performance based on reward mechanisms.
+## 📚 Project Overview
+This project focuses on **Natural Language Understanding (NLU)** using **BERT-based Named Entity Recognition (NER)**. It trains a model to identify entities in text and includes a chatbot for interactive NER.
 
-✅ Implementation of **Deep Q-Networks (DQN)** for agent training  
+✅ **Uses BERT (bert-base-uncased) for token classification**  
 
-✅ Optimized **reward shaping** for better performance  
+✅ **Processes textual data for Named Entity Recognition (NER)**  
 
-✅ Integration of **biological neural mechanisms** for spatial learning  
+✅ **Trains an NER model using Hugging Face's Transformers**  
 
-✅ Visual performance analysis using **TensorBoard & Matplotlib**  
-
----
-
-
-## 📂 Table of Contents  
-- [Overview](#-overview)  
-- [Features](#-features)  
-- [Installation](#-installation)  
-- [Usage](#-usage)  
-- [Model Training](#-model-training)  
-- [Results](#-results)  
-- [Contributing](#-contributing)  
-- [License](#-license)  
-- [Contact](#-contact)  
+✅ **Interactive chatbot for Named Entity Recognition (NER)**  
 
 ---
 
-
-## ✨ Features  
-✅ **Deep Q-Network (DQN)** for agent learning  
-✅ Custom reward shaping for better training  
-✅ Visualized training performance metrics  
-✅ Multi-environment compatibility  
-✅ Optimized hyperparameters for stable training  
+## 📖 Table of Contents
+- [📚 Project Overview](#-project-overview)
+- [🎯 Key Features](#-key-features)
+- [⚙️ Installation & Dependencies](#-installation--dependencies)
+- [🚀 Usage Instructions](#-usage-instructions)
+- [🗂️ Dataset Information](#-dataset-information)
+- [🤖 NER Chatbot](#-ner-chatbot)
+- [🧩 Contributing](#-contributing)
+- [📩 Contact & Support](#-contact--support)
+- [📜 License](#-license)
 
 ---
 
+## 🎯 Key Features
+- **BERT-based Named Entity Recognition (NER) Model**
+- **Processes textual datasets and tokenizes data**
+- **Custom training pipeline for entity classification**
+- **Simple chatbot to detect entities from user input**
 
-## ⚙️ Installation  
-Before running the project, install the required dependencies:  
+---
+
+## ⚙️ Installation & Dependencies
+To set up the project, install the required dependencies:
 
 ```sh
-git clone https://github.com/hamayl001/InternIntelligence_AIEthicsandBiasEvaluation.git
-cd InternIntelligence_AIEthicsandBiasEvaluation
+# Clone the repository
+git clone https://github.com/hamayl001/NLU_NER_Project.git
+cd NLU_NER_Project
+
+# Install dependencies
 pip install -r requirements.txt
-
----
-
-# Usage  
-
-To train and test the RL model, run:
-
-```sh
-# Train the model
-python train.py  
-
-# Test the trained agent
-python test.py
 ```
 
 ---
 
-## 📈 Model Training & Evaluation
+## 🚀 Usage Instructions
+Run the following commands to train and interact with the model:
 
-### 📡 Environment Setup
-- Initialize the agent in a predefined environment.
+```sh
+# Train the NER model
+python train.py
 
-### 🧠 Neural Network Training
-- Use **Deep Q-Learning (DQN)** to optimize decision-making.
-
-### 🎯 Reward System
-- Implement a **reward-based system** for reinforcement.
-
-### 📏 Performance Evaluation
-- Assess learning progression using **quantitative metrics**.
-
-Training metrics and model performance are logged using **TensorBoard** for easy visualization.
+# Run the interactive NER chatbot
+python chatbot.py
+```
 
 ---
 
-## 📊 Key Metrics & Results
+## 🗂️ Dataset Information
+- **Dataset Used:** NER dataset (`ner_dataset_fixed.csv`)
 
-### 🔍 Performance Comparison
-
-| **Metric**                | **Initial Performance** | **Optimized Performance** |
-|---------------------------|------------------------|--------------------------|
-| **Reward Accumulation**   | Low                    | Significantly Improved   |
-| **Decision Accuracy**     | 60%                    | 85%                      |
-| **Exploration Rate**      | High (Random Moves)    | Balanced Exploration-Exploitation |
-
-> **Insight:** Optimizing hyperparameters and reward functions leads to better performance and stability.
+- **Format:** Each row contains `word`, `sentence_id`, and `tag`.
+- 
+- **Example Entities Recognized:**
+- 
+  - `B-PER` (Person Names)
+  - `B-LOC` (Locations)
+  - `B-ORG` (Organizations)
 
 ---
 
-## 🔥 Insights & Performance Analysis
+## 🤖 NER Chatbot
+An interactive chatbot that identifies **Named Entities** from user input.
 
-### 📌 DQN Stability
-- Regularizing Q-value updates enhances convergence.
+```sh
+# Run the chatbot
+python chatbot.py
+```
 
-### 🧠 Biological Neural Integration
-- **CANNs and Grid Cells** improve spatial learning in RL.
-
-### 🔄 Exploration-Exploitation Trade-off
-- Adaptive strategies reduce randomness over time.
+Example:
+```sh
+You: Barack Obama was the 44th president of the USA.
+Bot: Entities: [('Barack Obama', 'PER'), ('USA', 'LOC')]
+```
 
 ---
 
 ## 🧩 Contributing
 
 ### 🔗 How to Contribute
-
 ```sh
 # Fork the repository
-git fork https://github.com/hamayl001/InternIntelligence_AIEthicsandBiasEvaluation.git
+git fork https://github.com/hamayl001/NLU_NER_Project.git
 
 # Create a new branch
 git checkout -b feature-branch
@@ -127,6 +109,15 @@ git push origin feature-branch
 # Submit a Pull Request
 ```
 
+---
+
+## 📩 Contact & Support
+
+### 📧 Contact Information
+
+- **Email:** [maylzahid588@gmail.com](mailto:maylzahid588@gmail.com)
+
+🤝 **Open to collaboration and improvements!**
 
 ---
 
@@ -136,15 +127,7 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 📩 Contact & Support
-
-### 📧 Contact Information
-- **Email:** [maylzahid588@gmail.com](mailto:maylzahid588@gmail.com)
-
-🤝 **Open to collaboration and improvements!**
-
----
-
-## ✅ Project Status
-**Completed**  
+✅ **Project Status:** Completed  
 **by #Hamayl Zahid**
+
+
