@@ -38,47 +38,71 @@ git clone https://github.com/hamayl001/InternIntelligence_AIEthicsandBiasEvaluat
 cd InternIntelligence_AIEthicsandBiasEvaluation
 pip install -r requirements.txt
 
----
 
-## 🚀 Usage
+## Usage  
+
 To train and test the RL model, run:
-python train.py  # Train the model  
-python test.py   # Test the trained agent
+
+```sh
+# Train the model
+python train.py  
+
+# Test the trained agent
+python test.py
+```
+
 ---
 
 ## 📈 Model Training & Evaluation
-The RL model follows these steps:
 
-Environment Setup: Initialize the agent in a predefined environment.
+### 📡 Environment Setup
+- Initialize the agent in a predefined environment.
 
-Neural Network Training: Use Deep Q-Learning (DQN) to optimize decision-making.
+### 🧠 Neural Network Training
+- Use **Deep Q-Learning (DQN)** to optimize decision-making.
 
-Reward System: Implement a reward-based system for reinforcement.
+### 🎯 Reward System
+- Implement a **reward-based system** for reinforcement.
 
-Performance Evaluation: Assess learning progression using quantitative metrics.
+### 📏 Performance Evaluation
+- Assess learning progression using **quantitative metrics**.
 
-Training metrics and model performance are logged using TensorBoard for easy visualization.
+Training metrics and model performance are logged using **TensorBoard** for easy visualization.
+
+---
 
 ## 📊 Key Metrics & Results
----------------------------------------------------------------
-Metric	| Initial Performance	| Optimized Performance
-------------------------------------------------------------------
-Reward Accumulation	|Low	                | Significantly Improved
-Decision Accuracy   |	60%	                | 85%
-Exploration Rate	  |High (Random Moves)	| Balanced Exploration-Exploitation
 
-🔍 Insight: Optimizing hyperparameters and reward functions leads to better performance and stability.
+### 🔍 Performance Comparison
+
+| **Metric**                | **Initial Performance** | **Optimized Performance** |
+|---------------------------|------------------------|--------------------------|
+| **Reward Accumulation**   | Low                    | Significantly Improved   |
+| **Decision Accuracy**     | 60%                    | 85%                      |
+| **Exploration Rate**      | High (Random Moves)    | Balanced Exploration-Exploitation |
+
+> **Insight:** Optimizing hyperparameters and reward functions leads to better performance and stability.
+
 ---
+
 ## 🔥 Insights & Performance Analysis
-DQN Stability: Regularizing Q-value updates enhances convergence.
 
-Biological Neural Integration: CANNs and Grid Cells improve spatial learning in RL.
+### 📌 DQN Stability
+- Regularizing Q-value updates enhances convergence.
 
-Exploration-Exploitation Trade-off: Adaptive strategies reduce randomness over time.
-----
+### 🧠 Biological Neural Integration
+- **CANNs and Grid Cells** improve spatial learning in RL.
+
+### 🔄 Exploration-Exploitation Trade-off
+- Adaptive strategies reduce randomness over time.
+
+---
 
 ## 🧩 Contributing
-Contributions are encouraged! Follow these steps:
+
+### 🔗 How to Contribute
+
+```sh
 # Fork the repository
 git fork https://github.com/hamayl001/InternIntelligence_AIEthicsandBiasEvaluation.git
 
@@ -92,18 +116,26 @@ git commit -m "Added new feature"
 git push origin feature-branch
 
 # Submit a Pull Request
+```
 
+
+---
 
 ## 📜 License
-This project is licensed under the MIT License.
+
+This project is licensed under the **MIT License**.
 
 ---
+
 ## 📩 Contact & Support
-For inquiries or collaboration, contact:
 
-📧 Email: maylzahid588@gmail.com
+### 📧 Contact Information
+- **Email:** [maylzahid588@gmail.com](mailto:maylzahid588@gmail.com)
 
-🤝 Open to collaboration and improvements!
+🤝 **Open to collaboration and improvements!**
+
 ---
-✅ Project Status: Completed
-by #Hamayl Zahid
+
+## ✅ Project Status
+**Completed**  
+**by #Hamayl Zahid**
