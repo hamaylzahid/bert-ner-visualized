@@ -3,6 +3,14 @@
 ## 📖 Overview  
 This project explores **Reinforcement Learning (RL)** techniques for solving complex decision-making problems using **Deep Q-Learning (DQN)** and other RL algorithms. The goal is to simulate agent behavior in an interactive environment, optimizing performance based on reward mechanisms.
 
+✅ Implementation of **Deep Q-Networks (DQN)** for agent training  
+
+✅ Optimized **reward shaping** for better performance  
+
+✅ Integration of **biological neural mechanisms** for spatial learning  
+
+✅ Visual performance analysis using **TensorBoard & Matplotlib**  
+
 ---
 
 
@@ -38,8 +46,9 @@ git clone https://github.com/hamayl001/InternIntelligence_AIEthicsandBiasEvaluat
 cd InternIntelligence_AIEthicsandBiasEvaluation
 pip install -r requirements.txt
 
+---
 
-## Usage  
+# Usage  
 
 To train and test the RL model, run:
 
