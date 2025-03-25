@@ -1,0 +1,10 @@
+sentence_id,word,tag
+1,Elon,B-PER
+1,Musk,I-PER
+1,founded,O
+2,Google,B-ORG
+2,is,O
+2,a,O
+3,company,O
+3,based,O
+3,in,O
