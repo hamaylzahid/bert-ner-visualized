@@ -7,9 +7,9 @@
 
 <p align="center">
   <!-- Badges -->
-<p align="left">
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License">
   <img src="https://img.shields.io/github/languages/top/hamaylzahid/bert-ner-visualized?color=blueviolet" />
-  <img src="https://img.shields.io/github/license/hamaylzahid/bert-ner-visualized?style=flat-square" />
   <img src="https://img.shields.io/github/last-commit/hamaylzahid/bert-ner-visualized?color=green" />
   <img src="https://img.shields.io/badge/Model-BERT--base--uncased-green?style=flat-square" />
   <img src="https://img.shields.io/badge/Chatbot-Interactive-orange?style=flat-square" />
@@ -58,9 +58,16 @@ sentence_id, word,    tag
 1,           Musk,    I-PER
 1,           founded, O
 ```
-# 🤖 Named Entity Recognition (NER) using BERT
 
-A complete CPU-optimized BERT-based Named Entity Recognition (NER) pipeline using Hugging Face Transformers and Datasets. It includes model training, evaluation, visualizations, and an interactive NER chatbot.
+---
+
+
+<br><h2 align="center">🤖 Named Entity Recognition (NER) using BERT</h2><br>
+
+<p>
+  A complete CPU-optimized BERT-based Named Entity Recognition (NER) pipeline using Hugging Face Transformers and Datasets.<br>
+  Includes model training, evaluation, clean visualizations, and an interactive CLI-based chatbot.
+</p>
 
 ---
 
@@ -72,80 +79,131 @@ Change the path in `main.py` if needed:
 df = pd.read_csv("C:/Users/you/path/to/ner_dataset_fixed.csv")
 
 ```
-# 🤖 Named Entity Recognition (NER) using BERT
-
-A complete CPU-optimized BERT-based NER system using Hugging Face Transformers. Includes training, evaluation, plots, and an interactive chatbot.
-
-```
-
-```
 <br><h2 align="center">📥 Dataset Format</h2><br>
 
+<p>
+  The dataset used for training follows a standard BIO tagging format where each row represents a single token and its corresponding named entity label.
+  <br>
+  Multiple rows with the same <code>sentence_id</code> belong to the same sentence.
+</p>
 
-sentence_id | word   | tag
-------------|--------|-----
-1           | Elon   | B-PER
-1           | Musk   | I-PER
-1           | founded| O
-2           | Google | B-ORG
-...
-```
+<p align="center">
+  The columns are:
+</p>
 
-```
-🛠 Update the dataset path in code:
+<ul>
+  <li><code>sentence_id</code> — Identifier for grouping words into sentences</li>
+  <li><code>word</code> — Individual tokens (words)</li>
+  <li><code>tag</code> — Entity labels in BIO format (<code>B-PER</code>, <code>I-PER</code>, <code>O</code>, etc.)</li>
+</ul>
 
-df = pd.read_csv("C:/Users/your/path/to/ner_dataset_fixed.csv")
-```
+<p align="center"><b>Sample Format:</b></p>
 
-```
+<pre align="center"><code>
+sentence_id | word    | tag
+------------|---------|-----
+1           | Elon    | B-PER
+1           | Musk    | I-PER
+1           | founded | O
+2           | Google  | B-ORG
+</code></pre>
+
+
+---
+
 <br><h2 align="center">🚀 Features</h2><br>
 
-✅ BERT Token Classification with HuggingFace  
-✅ Preprocessing + Tag Alignment  
-✅ Trainer API for CPU training  
-✅ Classification Report & Weighted F1  
-✅ Visual Plots: Loss Curve, Confusion Matrix, Entity Distribution  
-✅ CLI Chatbot for live NER extraction
-```
+<p>
+  This project offers a complete pipeline for training and evaluating a Named Entity Recognition (NER) model using BERT. It's tailored for ease of use, CPU compatibility, and insightful output.
+</p>
 
-```
+<ul>
+  <li>✅ <b>BERT Token Classification</b> using HuggingFace Transformers</li>
+  <li>✅ <b>Smart Preprocessing</b> with proper tag alignment (BIO format)</li>
+  <li>✅ <b>Trainer API</b> compatible with CPU for smooth training</li>
+  <li>✅ <b>Comprehensive Evaluation</b> with classification report & weighted F1 score</li>
+  <li>✅ <b>Visual Analysis</b>: Loss Curve, Confusion Matrix, and Entity Distribution</li>
+  <li>✅ <b>Interactive CLI Chatbot</b> for real-time named entity extraction</li>
+</ul>
+
+<p>
+  🧠 Whether you're a beginner or NLP practitioner, this project simplifies NER with BERT — from raw text to insightful results.
+</p>
+
+
+---
 <br><h2 align="center">⚙️ Setup Instructions</h2><br>
 
-# Clone the repository
+<br><h4 align="left"> Clone the repository</h4><br>
+
 git clone https://github.com/yourusername/BERT-NER.git
 cd BERT-NER
 
-# Install dependencies
+<br><h4 align="left">Install dependencies</h4><br>
+
 pip install -r requirements.txt
 
-# Or install individually
-pip install pandas scikit-learn matplotlib seaborn transformers datasets
-```
+<br><h4 align="left">Or install individually</h4><br>
 
-```
+pip install pandas scikit-learn matplotlib seaborn transformers datasets
+
+---
+
 <br><h2 align="center">🏃 Run Training</h2><br>
 
+<p>
+  Once the setup is complete and the dataset path is properly configured, you can train the BERT-based NER model by running the main script.
+  <br>
+  Training is optimized for CPU usage and saves model outputs and logs for analysis.
+</p>
 
+<p align="center"><b>Command:</b></p>
+
+<pre align="center"><code>python main.py</code></pre>
+
+<p>
+  After execution, model checkpoints and training logs will be saved in the respective folders like <code>ner_model/</code> and <code>results/</code>.
+  <br>
+  You can visualize performance in the <code>visuals/</code> directory after training completes.
+</p>
+
+
+```bash
 python main.py
-```
+
 
 ```
 <br><h2 align="center">📊 Evaluation Metrics</h2><br>
 
-- Accuracy  
-- Weighted F1 Score  
-- Classification Report (Precision, Recall, F1)
-```
+<p>
+  After training, the model is evaluated using standard classification metrics that reflect its performance on Named Entity Recognition tasks.
+  <br>
+  These metrics help assess both overall accuracy and how well each entity type is recognized.
+</p>
+
+<ul>
+  <li><b>Accuracy</b> – Overall percentage of correctly predicted tokens.</li>
+  <li><b>Weighted F1 Score</b> – F1-score considering support (number of true instances) for each class.</li>
+  <li><b>Classification Report</b> – Includes <code>precision</code>, <code>recall</code>, and <code>F1-score</code> for each entity tag (PER, ORG, LOC, etc.).</li>
+</ul>
+
+<p>
+  📁 Output is automatically saved to <code>results/</code> and visualized in the <code>visuals/</code> directory.
+</p>
 
 
+  
+---
 
-```
+
 <br><h2 align="center">🤖 NER Chatbot</h2><br>
 
-# Run the chatbot
+<br><h4 align="left">Run the chatbot</h4><br>
+
 python main.py
 
-# Example:
+<br><h4 align="left">Example:</h4><br>
+
 You: Barack Obama was the 44th president of the USA.  
 Bot: Entities: [('Barack Obama', 'PER'), ('USA', 'LOC')]
 
@@ -153,11 +211,26 @@ Type 'exit' to quit.
 
 <br><h2 align="center">🤝 Contact & Contribution</h2><br>
 
-Have feedback, ideas, or want to collaborate on improving this NER project?
+<p align="center">
+  <a href="mailto:maylzahid588@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-Contact%20Me-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+  </a>
+</p>
 
-- 📧 **Email**: [maylzahid588@gmail.com](mailto:maylzahid588@gmail.com)  
-- 🌟 Star this repo to support the work  
-- 🤝 Fork and contribute—PRs are always welcome!
+<p>
+  Have feedback, ideas, or want to collaborate on improving this NER project?
+</p>
+
+<ul>
+
+  <li>🌟 Star this repo to support the work</li>
+  <li>🤝 Fork and contribute — PRs are always welcome!</li>
+</ul>
+
 
 ---
 
@@ -209,7 +282,7 @@ This project is licensed under the **MIT License** – feel free to use, modify,
   <sub><i>Build responsibly. Deploy transparently. Recognize intelligently.</i></sub>
 </p>
 
-<p align="center">
+<p>
   🧠 <b>Use this project to demonstrate your skills in NLP, Transformers, and Explainable AI</b>  
   <br>
   🚀 Clone it, explore it, refine it — and share your improvements with the community.
