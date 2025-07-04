@@ -1,9 +1,14 @@
 <!-- Banner -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamaylzahid/bert-ner-visualized/refs/heads/main/banner_bert.png" alt="BERT NER Banner" style="width:100%; max-width:900px;" />
+</p>
+
 <br><h1 align="center">🧠 BERT-based Named Entity Recognition (NER)</h1><br>
 <p align="center">
   <b>Natural Language Understanding using Transformer Models</b><br>
   <i>Train, evaluate, and interact with an NER model — with clean visualizations and chatbot support.</i>
 </p>
+
 
 <p align="center">
   <!-- Badges -->
@@ -284,8 +289,8 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 
 <p>
   🧠 <b>Use this project to demonstrate your skills in NLP, Transformers, and Explainable AI</b>  
-  <br>
-  🚀 Clone it, explore it, refine it — and share your improvements with the community.
+  <br></p>
+ <p> 🚀 Clone it, explore it, refine it — and share your improvements with the community.
 </p>
 
 
